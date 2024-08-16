@@ -20,7 +20,7 @@
     </head>
     <body>
         <div class="header">
-            <nav>
+            <nav id="navBar">
                 <img src="images/logo.png" class="logo" />
                 <ul class="nav-links">
                     <li><a href="#" class="active">Popular Places</a></li>
@@ -28,6 +28,7 @@
                     <li><a href="#">Online Packages</a></li>
                 </ul>
                 <a href="#" class="register-btn">Register Now</a>
+                <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
             </nav>
             <div class="container">
                 <h1>Find Your Next Stay</h1>
@@ -184,10 +185,12 @@
             <div class="about-msg">
                 <h2>About TravelQuest</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                    mollitia fugit maxime cupiditate reiciendis alias quia,
-                    perspiciatis voluptate excepturi ipsum, sunt atque molestiae
-                    accusantium iure non quo voluptas, aliquam labore?
+                    TravelQuest is your ultimate travel guide, offering
+                    personalized itineraries and expert tips to make every
+                    journey unforgettable. Designed by Aaditya Jha
+                    (RA2211003010818) and Saksham Lamba (RA2211003010867), this
+                    website combines innovation and user-friendly design to
+                    enhance your travel planning experience.
                 </p>
             </div>
 
@@ -211,5 +214,13 @@
                 <p>Copyright &copy; 2024, Aaditya Jha & Saksham Lamba</p>
             </div>
         </div>
+
+        <script>
+            var navBar = document.getElementById("navBar");
+
+            function togglebtn() {
+                navBar.classList.toggle("hidemenu");
+            }
+        </script>
     </body>
 </html>
